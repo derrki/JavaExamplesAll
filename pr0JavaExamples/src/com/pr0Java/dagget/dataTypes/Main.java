@@ -32,11 +32,13 @@ public class Main {
         Dog thisDog = new Dog("Sparky");
         Dog thetDog = thisDog;
         println("thisDog = " + thisDog.getDogName() + "   thatDog = " + thetDog.getDogName());
+        println("thisDog = " + thisDog + "   thatDog = " + thetDog);
         println("");
         thetDog.setDogName("Wolfie");
         println("Після присвоєння thetDog Wolfie");
         println("");
         println("thisDog = " + thisDog.getDogName() + "   thatDog = " + thetDog.getDogName());
+        println("thisDog = " + thisDog + "   thatDog = " + thetDog);
 
 
     }

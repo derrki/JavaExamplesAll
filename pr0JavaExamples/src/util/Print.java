@@ -1,4 +1,4 @@
-package com.pr0Java.dagget.dataTypes;
+package util;
 
 public class Print {
 

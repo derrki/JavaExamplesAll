@@ -8,11 +8,18 @@ public class Main {
         //Приклад виводу "Hello world!" різними методами
         AdvancedHello.advancedHello();
 
-        println("");
+        println();
         //Приклад роботи з примітивними типами даних та типами "посилання"
         WorkWithDataTypes.printHead();
         WorkWithDataTypes.workWithPrimitiveTypes();
         WorkWithDataTypes.workWithLinkTypes();
+
+        println();
+        //Приклад присвоєння значень за замовчуванням різним типам даних
+        DataTypesValues.defaultValues();
+        println();
+        //Діапазони допустимих значень з обємом використовуваної памяті
+        DataTypesValues.sizeAndDiapasonValues();
 
     }
 }

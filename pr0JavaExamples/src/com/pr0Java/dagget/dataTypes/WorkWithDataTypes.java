@@ -5,8 +5,8 @@ import static util.Print.*;
 public class WorkWithDataTypes {
 
     public static void printHead() {
-        println("Приклад примітивних і ссилочних типів даних в ava");
-        println("");
+        println("Приклад примітивних і ссилочних типів даних в Java");
+        println();
         println("Примітивні типи");
     }
 
@@ -23,17 +23,18 @@ public class WorkWithDataTypes {
     //змінні ссилочних типів даних передаються по посиланню
 
     public static void workWithLinkTypes() {
-        println("");
+        println();
         println("силочні типи");
         Dog thisDog = new Dog("Sparky");
         Dog thetDog = thisDog;
         println("thisDog = " + thisDog.getDogName() + "   thatDog = " + thetDog.getDogName());
         println("thisDog = " + thisDog + "   thatDog = " + thetDog);
-        println("");
+        println();
         thetDog.setDogName("Wolfie");
         println("Після присвоєння thetDog Wolfie");
-        println("");
+        println();
         println("thisDog = " + thisDog.getDogName() + "   thatDog = " + thetDog.getDogName());
         println("thisDog = " + thisDog + "   thatDog = " + thetDog);
     }
+
 }

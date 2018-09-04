@@ -8,7 +8,6 @@ public class AdvancedHello {
         print("Hello ");
         println("world !");
         printf("Hello %s", "world !");
-        println("");
+        println();
     }
-
 }

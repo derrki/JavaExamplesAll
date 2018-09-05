@@ -6,8 +6,8 @@ public class AdvancedHello {
 
     public static void advancedHello(){
         print("Hello ");
-        println("world !");
-        printf("Hello %s", "world !");
+        println("World !");
+        printf("Hello %s", "World !");
         println();
     }
 }

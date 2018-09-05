@@ -24,6 +24,7 @@ public class QuickComparison {
         a = compare1(9) && compare2(9);
         println("a = " + a);
         println();
+        println("\n відносне або ||");
         a = compare1(9) || compare2(3);
         println("a = " + a);
         println();

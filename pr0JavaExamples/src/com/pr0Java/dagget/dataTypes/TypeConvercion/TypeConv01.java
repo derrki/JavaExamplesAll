@@ -5,7 +5,7 @@ import static util.Print.*;
 public class TypeConv01 {
     public static void main(String[] args) {
 
-        //приклад явного приведення типів
+        //приклад не явного приведення типів
         byte b = 127;
         short s = b;
         int i = s;

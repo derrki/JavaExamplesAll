@@ -9,7 +9,6 @@ public class TypeConv02 {
         println("d = " + d);
         println("b = " + b);
         println("---------------");
-
         d = 454.874;
         b = (byte) d; // b = -58
         println("d = " + d);
@@ -51,7 +50,5 @@ public class TypeConv02 {
         println("b2 = " + b2);
         i3 = myB;
         println("i3 = " + i3);
-
-
     }
 }

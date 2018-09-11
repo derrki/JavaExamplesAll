@@ -7,7 +7,12 @@ public class Operators03While {
         int i = args.length;
         while (i > 0) {
             --i;
-            print("Hello " + args[i]);
+            println("Hello " + args[i]);
         }
+
+        int l = 100;
+        int m = 200;
+        while(++l < --m);
+        println("Середнє значення = " + l);
     }
 }

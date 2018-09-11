@@ -1,4 +1,4 @@
-package com.pr0Java.dagget.dataTypes;
+package com.pr0Java.dagget.dataTypes.OperatorsAndStatements;
 
 import static util.Print.*;
 public class Operators01 {

@@ -14,6 +14,10 @@ public class Print {
         System.out.println(object);
     }
 
+    public static void  printLnLineLn() {
+        System.out.println("\n--------------------------------------------");
+    }
+
     public static void printf(String data, Object... args) {
         System.out.printf(data, args);
     }

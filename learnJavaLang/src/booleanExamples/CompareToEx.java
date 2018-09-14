@@ -3,11 +3,10 @@ package booleanExamples;
 public class CompareToEx {
     public static void main(String[] args) {
         Boolean mBoolean1, mBoolean2;
+        int res;
 
         mBoolean1 = new Boolean(true);
         mBoolean2 = new Boolean(false);
-
-        int res;
 
         res = mBoolean1.compareTo(mBoolean2);
 
@@ -15,11 +14,11 @@ public class CompareToEx {
         String str2 = "Object value is true";
         String str3 = "Argument value is true";
 
-        if (res == 0 ){
+        if (res == 0) {
             System.out.println(str1);
         } else if (res > 0) {
             System.out.println(str2);
-        }else if (res < 0){
+        } else if (res < 0) {
             System.out.println(str3);
         }
 

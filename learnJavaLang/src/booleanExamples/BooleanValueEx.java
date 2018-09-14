@@ -8,6 +8,8 @@ public class BooleanValueEx {
         mBooleanWrapper = new Boolean(true);
         mBooleanPrimitive = mBooleanWrapper.booleanValue();
 
+
+
         String str = "Primitive value of Boolean object " + mBooleanWrapper + " is " + mBooleanPrimitive;
         System.out.println(str);
 

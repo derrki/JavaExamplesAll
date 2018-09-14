@@ -14,5 +14,4 @@ public class EqualsEx {
 
         System.out.println(str);
     }
-
 }

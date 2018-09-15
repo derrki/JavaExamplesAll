@@ -4,6 +4,7 @@ public class NumberClassEx {
     public static void main(String[] args) {
         Integer x = new Integer(123456);
         Float y = new Float(9876f);
+        Double z = new Double(98765);
 
         // print their value as byte
         System.out.println("x as integer: " + x
@@ -22,5 +23,11 @@ public class NumberClassEx {
                 + ", x as float:" + x.floatValue());
         System.out.println("y as double:" + y
                 + ", y as float:" + y.floatValue());
+
+        // print their value as int
+        System.out.println("\ny as float:" + y
+                + ", y as Integer:" + y.intValue());
+        System.out.println("z as double:" + z
+                + ", z as Integer:" + z.intValue());
     }
 }

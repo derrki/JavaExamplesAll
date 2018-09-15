@@ -29,5 +29,11 @@ public class NumberClassEx {
                 + ", y as Integer:" + y.intValue());
         System.out.println("z as double:" + z
                 + ", z as Integer:" + z.intValue());
+
+        // print their value as long
+        System.out.println("\ny as float:" + y
+                + ", y as long:" + y.longValue());
+        System.out.println("z as double:" + z
+                + ", z as long:" + z.longValue());
     }
 }

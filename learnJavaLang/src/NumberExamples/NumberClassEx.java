@@ -35,5 +35,11 @@ public class NumberClassEx {
                 + ", y as long:" + y.longValue());
         System.out.println("z as double:" + z
                 + ", z as long:" + z.longValue());
+
+        // print their value as short
+        System.out.println("\ny as float :" + y
+                + ", y as short:" + y.shortValue());
+        System.out.println("z as double:" + z
+                + ", z as short:" + z.shortValue());
     }
 }

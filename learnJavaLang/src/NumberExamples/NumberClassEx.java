@@ -16,5 +16,11 @@ public class NumberClassEx {
                 + ", x as double:" + x.doubleValue());
         System.out.println("y as float::" + y
                 + ", y as double:" + y.doubleValue());
+
+        // print their value as float
+        System.out.println("\nx as integer:" + x
+                + ", x as float:" + x.floatValue());
+        System.out.println("y as double:" + y
+                + ", y as float:" + y.floatValue());
     }
 }

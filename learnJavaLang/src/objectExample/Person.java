@@ -1,6 +1,9 @@
 package objectExample;
 
-public class Person {
+import java.io.Serializable;
+import java.util.Calendar;
+
+public class Person implements Cloneable{
     private String name;
     private int age;
 

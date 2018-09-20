@@ -21,5 +21,11 @@ public class Main {
         //Діапазони допустимих значень з обємом використовуваної памяті
         DataTypesValues.sizeAndDiapasonValues();
 
+        Integer integer = new Integer(10);
+        Integer.valueOf(5);
+        System.out.println("\n" + integer.compareTo(8));
+        System.out.println("\n" + integer.compareTo(10));
+        System.out.println("\n" + integer.compareTo(50));
+
     }
 }

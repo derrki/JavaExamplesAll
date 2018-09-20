@@ -17,5 +17,17 @@ public class BigDecimalClass {
         BigDecimal bd2 = BigDecimal.valueOf(1.1);
         println("bd1 = " + bd1 + "  bd2 = " + bd2);
         println("bd1-bd2 = " + (bd1.subtract(bd2)));
+
+        double d3 = 10;
+        double d4 = 0.0825;
+        println("d3*d4 = " + (d3 * d4));
+
+        //обєкти краще створювати з рядка, або через valueOf()
+        BigDecimal bd3 = new BigDecimal(0.3);
+        println("bd3 = " + bd3);
+        bd3 = new BigDecimal("0.3");
+        println("bd3 = " + bd3);
+        bd3 = BigDecimal.valueOf(0.3);
+        println("bd3 = " + bd3);
     }
 }

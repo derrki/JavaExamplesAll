@@ -123,5 +123,43 @@ public class BigDecimalClass {
         bdr = new BigDecimal("-0.325");
         print("bdr = " + bdr);
         println("  ROUND_HALF_EVEN bdr = " + bdr.setScale(2, BigDecimal.ROUND_HALF_EVEN));
+
+        // ROUND_UNNECESSARY: без заокруглення
+        println();
+        println("ROUND_UNNECESSARY: без заокруглення");
+        bdr = new BigDecimal("0.333");
+        print("bdr =  " + bdr);
+        println("   ROUND_UNNECESSARY bdr =  " + bdr.setScale(3, BigDecimal.ROUND_UNNECESSARY));
+        bdr = new BigDecimal("-0.333");
+        print("bdr = " + bdr);
+        println("   ROUND_UNNECESSARY bdr = " + bdr.setScale(3, BigDecimal.ROUND_UNNECESSARY));
+
+        println("\nз заокругленням");
+        BigDecimal bd01 = new BigDecimal("1");
+        BigDecimal bd03 = new BigDecimal("3");
+        // BigDecimal bd1d3 = bd01.divide(bd03); // буде помилка ArithmeticException
+        BigDecimal bd1d3 = bd01.divide(bd03, 5, BigDecimal.ROUND_HALF_UP);
+        println("bd1d3 = " + bd1d3);
+
+        println("\nПриклади порівняння");
+        BigDecimal a = new BigDecimal("2.00");
+        BigDecimal b = new BigDecimal("2.0");
+        println("a = " + a + "  b = " + b);
+        println("a.equals(b) = " + a.equals(b)); // false
+
+        // повертає (-1 якщо a < b), (0 якщо a == b), (1 якщо a > b)
+        println("a.compareTo(b) = " + a.compareTo(b));
+        // повертає (-1 якщо a < 0), (0 якщо a == 0), (1 якщо a > 0)
+        println("a.signum() = " + a.signum());
+
+        // Забираємо непотрібні нулі в кінці BigDecimal
+        println("\nЗабираємо непотрібні нулі в кінці BigDecimal");
+        BigDecimal bd_1 = new BigDecimal("1.55");
+        BigDecimal bd_2 = new BigDecimal("3.15");
+        BigDecimal bd_3 = bd_1.add(bd_2);
+        println("bd_3 = " + bd_3);
+        println("bd_3 = " + bd_3.stripTrailingZeros());
+
+
     }
 }

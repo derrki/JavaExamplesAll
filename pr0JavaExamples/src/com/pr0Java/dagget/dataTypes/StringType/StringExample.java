@@ -1,4 +1,6 @@
 package com.pr0Java.dagget.dataTypes.StringType;
+import com.pr0Java.dagget.dataTypes.Dog;
+
 import static util.Print.*;
 import static util.Sys.*;
 public class StringExample {
@@ -20,5 +22,27 @@ public class StringExample {
         println("хеш обєкта s4 " + iHash(s4) + "  хеш стрічки  " + s4 +" = " + s4.hashCode());
         println("хеш обєкта s5 " + iHash(s5) + "  хеш стрічки  " + s5 +" = " + s5.hashCode());
         println("хеш обєкта s6 " + iHash(s6) + "  хеш стрічки  " + s6 +" = " + s6.hashCode());
-     }
+
+        s3 = "World";
+        println("\nстрічка s1 = " + s1);
+        println("хеш обєкта s3 " + iHash(s3) + "  хеш стрічки  " + s3 +" = " + s3.hashCode());
+
+        println();
+        s6 = "Hi world!!!";
+        println("хеш обєкта s6 " + iHash(s6) + "  хеш стрічки  " + s6 +" = " + s6.hashCode());
+
+        println();
+        s4 = s4.intern();//пошук посилання на існуючий обєкт в string pool
+        println("хеш обєкта s4 " + iHash(s4) + "  хеш стрічки  " + s4 +" = " + s4.hashCode());
+
+        println();
+
+        println("World" + " = " + System.identityHashCode("World"));
+        String s7 = "World";
+        println("s7 = " + System.identityHashCode(s7));
+
+        String s8 = new String("World").intern();
+        println("s8 = " + System.identityHashCode(s8));
+
+    }
 }

@@ -1,5 +1,7 @@
 package com.pr0Java.dagget.dataTypes.StringType;
 
+import java.util.Date;
+
 import static util.Print.*;
 
 public class StringBuilderAppendEx {
@@ -17,5 +19,14 @@ public class StringBuilderAppendEx {
         println("stringBuilderTwo = " + stringBuilderTwo);
         println("stringBuilderTwo.length() = " + stringBuilderTwo.length());
         println("stringBuilderTwo.capacity() = " + stringBuilderTwo.capacity());
+
+        StringBuilder stringBuilderThree = new StringBuilder().append(new Date());
+        println("stringBuilderThree = " + stringBuilderThree);
+
+        Person person = new Person();
+        StringBuilder stringBuilderFour = new StringBuilder().append(person);
+        println("stringBuilderFour = " + stringBuilderFour);
+
+
     }
 }

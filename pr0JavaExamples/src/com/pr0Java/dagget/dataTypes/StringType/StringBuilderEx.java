@@ -7,5 +7,15 @@ public class StringBuilderEx {
         StringBuilder stringBuilderOne = new StringBuilder();
         println("stringBuilderOne.length() = " + stringBuilderOne.length());
         println("stringBuilderOne.capacity() = " + stringBuilderOne.capacity());
+
+        StringBuilder stringBuilderTwo = new StringBuilder(10);
+        println("\nstringBuilderTwo.length() = " + stringBuilderTwo.length());
+        println("stringBuilderTwo.capacity() = " + stringBuilderTwo.capacity());
+
+        StringBuilder stringBuilderThree = new StringBuilder("Hello");
+        println("\nstringBuilderThree.length() = " + stringBuilderThree.length());
+        println("stringBuilderThree.capacity() = " + stringBuilderThree.capacity());
     }
 }
+
+

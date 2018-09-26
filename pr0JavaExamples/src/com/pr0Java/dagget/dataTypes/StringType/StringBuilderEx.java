@@ -15,6 +15,7 @@ public class StringBuilderEx {
         StringBuilder stringBuilderThree = new StringBuilder("Hello");
         println("\nstringBuilderThree.length() = " + stringBuilderThree.length());
         println("stringBuilderThree.capacity() = " + stringBuilderThree.capacity());
+
     }
 }
 

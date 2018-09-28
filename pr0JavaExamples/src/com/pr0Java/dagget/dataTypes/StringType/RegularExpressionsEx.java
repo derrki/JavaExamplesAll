@@ -12,9 +12,14 @@ public class RegularExpressionsEx {
 
         String stringNumber = "Number 25, is 5+20, or 15and10";
         println(stringNumber);
+        String[] exprTwo = stringNumber.split("\\s");
         println("replaceAll -> "
                 + stringNumber.replaceAll("(-|\\+)?\\d+", "NUMBER"));
         println("replaceFirst -> "
                 + stringNumber.replaceFirst("(-|\\+)?\\d+", "NUMBER"));
+
+        for (String argArray : exprTwo) {
+            println(argArray + (argArray.matches("(-|\\+)?\\d+")?"підходить":"не підходить"));
+        }
     }
 }

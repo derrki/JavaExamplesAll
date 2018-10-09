@@ -28,4 +28,20 @@ public class Cow {
     Cow getThis(){
         return this;
     }
+
+    public void changeArgsPrimitive(int arg){
+        print("зміна переданого примітивного аргументу - ");
+        arg = 6;
+    };
+
+    public void changeArgsReferens(Cow cow){
+        print("зміна переданого ссилочного аргументу - ");
+        cow.milcValue = 9.9;
+    };
+
+    public void changeArgsReferensTwo(Cow cow){
+        println("переприсвоєння переданого ссилочного аргументу - ");
+        cow = new Cow();
+        cow.milcValue = 19.9;
+    };
 }

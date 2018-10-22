@@ -1,5 +1,7 @@
 package com.ExtendsEx;
 
+import java.util.Objects;
+
 public class Robot {
     private int serialNumber;
     private String name = "NoNaMe";
@@ -49,7 +51,7 @@ public class Robot {
 
         Robot otherRobot = (Robot) otherObject;
 
-        return  name.equals(otherRobot.name)
-                && color.equals(otherRobot.color);
+        return Objects.equals(name, otherRobot.name)
+                && Objects.equals(color, otherRobot.color);
     }
 }

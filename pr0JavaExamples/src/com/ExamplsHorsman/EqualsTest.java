@@ -1,7 +1,10 @@
 package com.ExamplsHorsman;
 
+import java.util.ArrayList;
+
 public class EqualsTest {
     public static void main(String[] args) {
+
         Employee alise1 =
                 new Employee("Alice Adams", 75000, 1987, 12, 15);
 
@@ -22,6 +25,7 @@ public class EqualsTest {
                 new Manager("Carl Cracker", 8000, 1987, 12, 15);
         Manager boss =
                 new Manager("Carl Cracker", 8000, 1987, 12, 15);
+
         boss.setBonus(5000);
         System.out.println("boss.toString(): " + boss);
         System.out.println("carl.equals(boss): " + carl.equals(boss));
@@ -29,5 +33,24 @@ public class EqualsTest {
         System.out.println("alise3.hashCode(): " + alise3.hashCode());
         System.out.println("boss.hashCode(): " + boss.hashCode());
         System.out.println("carl.hashCode(): " + carl.hashCode());
+
+        ArrayList<Employee> staff = new ArrayList<>(10);
+        //staff.ensureCapacity(10);
+        staff.add(new Employee("Jo", 5000, 1985, 12, 13));
+        staff.add(new Employee("Ron", 5000, 1990, 10, 01));
+        staff.add(new Employee("Eddy", 5000, 1985, 12, 13));
+        System.out.println(staff.size());
+
+        for (Employee e: staff) {
+            System.out.println(e);
+        }
+
+        for (Employee e: staff) {
+         e.raiseSalary(1000);
+        }
+
+        for (Employee e: staff) {
+            System.out.println(e);
+        }
     }
 }

@@ -52,5 +52,25 @@ public class EqualsTest {
         for (Employee e: staff) {
             System.out.println(e);
         }
+
+        staff.set(2, new Employee("Ja Junior", 4000, 1995, 01, 19));
+        System.out.println(staff.size());
+        for (int i = 0; i < staff.size(); i++) {
+            System.out.println(staff.get(i));
+        }
+        
+        staff.add(2 ,new Employee("Eddy", 5000, 1985, 12, 13));
+
+        System.out.println(staff.size());
+        for (Employee e: staff) {
+            System.out.println(e);
+        }
+
+        System.out.println("");
+        System.out.println(staff.remove(2));
+        System.out.println(staff.size());
+        for (Employee e: staff) {
+            System.out.println(e);
+        }
     }
 }
